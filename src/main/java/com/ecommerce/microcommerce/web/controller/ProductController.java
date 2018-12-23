@@ -16,10 +16,14 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import javax.validation.Valid;
 import java.net.URI;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 
-@Api( description="API pour es opérations CRUD sur les produits.")
+@Api(description = "API pour les opérations CRUD sur les produits.")
 
 @RestController
 public class ProductController {
@@ -104,5 +108,26 @@ public class ProductController {
     }
 
 
+    //Calcul de la marge
+    @ApiOperation(value = "calcule la marge de chaque produit (différence entre prix d‘achat et prix de vente).")
+    @GetMapping(value = "/AdminProduits")
+    public Map<Product, Integer> calculerMargeProduit() {
+
+        List<Product> products = productDao.findAll();
+
+        Map<Product, Integer> productsWithMarge = new HashMap<>();
+
+        for (Product product : products) {
+
+            productsWithMarge.put(product, product.getPrix() - product.getPrixAchat());
+
+        }
+
+        //on retourne une collection triée sur les produits
+        return productsWithMarge.entrySet()
+                .stream()
+                .sorted((Map.Entry.comparingByValue()))
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
+    }
 
 }
