@@ -1,0 +1,202 @@
+{
+  "id": "7bf8023b-1260-4cf5-8c12-891ef95d970b",
+  "name": "Mcommerce-partie1",
+  "allTests": [],
+  "timestamp": "2018-12-23T18:12:36.658Z",
+  "collection_id": "88cd1507-ba85-4250-a1b3-8b69885e093e",
+  "folder_id": 0,
+  "target_type": "collection",
+  "environment_id": "0",
+  "data": [],
+  "delay": 0,
+  "count": 1,
+  "collection": {
+    "id": "88cd1507-ba85-4250-a1b3-8b69885e093e",
+    "name": "Mcommerce-partie1",
+    "description": "Affichage de la marge",
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [
+      "13c4ca10-979f-405b-ac20-7e7c7c713a81",
+      "11f2df1d-7d94-4c75-a298-42703f534262",
+      "506c4101-ddb0-4eb9-b849-ba34c5bda5d9",
+      "19c77321-0bf4-4685-b82d-2a0ee6217825"
+    ],
+    "folders_order": [],
+    "owner": "6212081",
+    "permissions": {},
+    "favorite": false,
+    "shared": false,
+    "type": "collection",
+    "depth": 0
+  },
+  "folder": null,
+  "environment": null,
+  "globals": [],
+  "results": [
+    {
+      "name": "http://localhost:9090/AdminProduits",
+      "id": "13c4ca10-979f-405b-ac20-7e7c7c713a81",
+      "url": "http://localhost:9090/AdminProduits",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {},
+      "times": [
+        "36"
+      ],
+      "allTests": [
+        {}
+      ],
+      "time": "36",
+      "totalRequestTime": "36",
+      "iterationResults": {}
+    },
+    {
+      "name": "http://localhost:9090/TrierProduitsParNom",
+      "id": "11f2df1d-7d94-4c75-a298-42703f534262",
+      "url": "http://localhost:9090/TrierProduitsParNom",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {},
+      "times": [
+        "7"
+      ],
+      "allTests": [
+        {}
+      ],
+      "time": "7",
+      "totalRequestTime": "7",
+      "iterationResults": {}
+    },
+    {
+      "name": "http://localhost:9090/Produits",
+      "id": "506c4101-ddb0-4eb9-b849-ba34c5bda5d9",
+      "url": "http://localhost:9090/Produits",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden",
+        "detail": {
+          "name": "Forbidden",
+          "detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+        }
+      },
+      "testPassFailCounts": {},
+      "times": [
+        "13"
+      ],
+      "allTests": [
+        {}
+      ],
+      "time": "13",
+      "totalRequestTime": "13",
+      "iterationResults": {}
+    },
+    {
+      "name": "http://localhost:9090/Produits",
+      "id": "19c77321-0bf4-4685-b82d-2a0ee6217825",
+      "url": "http://localhost:9090/Produits",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden",
+        "detail": {
+          "name": "Forbidden",
+          "detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+        }
+      },
+      "testPassFailCounts": {},
+      "times": [
+        "6"
+      ],
+      "allTests": [
+        {}
+      ],
+      "time": "6",
+      "totalRequestTime": "6",
+      "iterationResults": {}
+    }
+  ],
+  "totalPass": 0,
+  "totalFail": 0,
+  "totalTime": 62,
+  "lifecycle": "done",
+  "requests": [
+    {
+      "name": "http://localhost:9090/AdminProduits",
+      "id": "13c4ca10-979f-405b-ac20-7e7c7c713a81",
+      "url": "http://localhost:9090/AdminProduits",
+      "time": "2018-12-23T18:12:36.658Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {}
+    },
+    {
+      "name": "http://localhost:9090/TrierProduitsParNom",
+      "id": "11f2df1d-7d94-4c75-a298-42703f534262",
+      "url": "http://localhost:9090/TrierProduitsParNom",
+      "time": "2018-12-23T18:12:36.658Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {}
+    },
+    {
+      "name": "http://localhost:9090/Produits",
+      "id": "506c4101-ddb0-4eb9-b849-ba34c5bda5d9",
+      "url": "http://localhost:9090/Produits",
+      "time": "2018-12-23T18:12:36.658Z",
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden",
+        "detail": {
+          "name": "Forbidden",
+          "detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+        }
+      },
+      "testPassFailCounts": {}
+    },
+    {
+      "name": "http://localhost:9090/Produits",
+      "id": "19c77321-0bf4-4685-b82d-2a0ee6217825",
+      "url": "http://localhost:9090/Produits",
+      "time": "2018-12-23T18:12:36.658Z",
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden",
+        "detail": {
+          "name": "Forbidden",
+          "detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+        }
+      },
+      "testPassFailCounts": {}
+    }
+  ],
+  "synced": false
+}
