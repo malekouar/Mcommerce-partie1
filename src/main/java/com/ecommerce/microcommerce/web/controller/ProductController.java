@@ -130,4 +130,13 @@ public class ProductController {
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
     }
 
+
+    //Tri par ordre alphabétique
+    @ApiOperation(value = "fait appel à une méthode dans ProductDao  qui utilise le nommage conventionné de Spring Data JPA (findAllByOrderByNomAsc)")
+    @GetMapping(value = "/TrierProduitsParNom")
+    public List<Product> trierProduitsParOrdreAlphabetique() {
+
+        return productDao.findAllByOrderByNomAsc();
+    }
+
 }
